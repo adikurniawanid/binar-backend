@@ -2,13 +2,13 @@ function gameControl(gameBoard, controller) {
   let yPosition;
   let xPosition;
 
-  for (let i = 0; i < gameBoard.length; i++) {
+  outerLoop: for (let i = 0; i < gameBoard.length; i++) {
     for (let j = 0; j < gameBoard[i].length; j++) {
       if (gameBoard[i][j] === "*") {
         yPosition = i;
         xPosition = j;
         gameBoard[i][j] = "";
-        break;
+        break outerLoop;
       }
     }
   }
