@@ -1,0 +1,58 @@
+[
+    {
+        "id": 2,
+        "userId": 2,
+        "movie": "Batman",
+        "rating": 4.2,
+        "review": "keren film nya loh"
+    },
+    {
+        "id": 3,
+        "userId": 3,
+        "movie": "Inception",
+        "rating": 4.8,
+        "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur urna lectus, vitae laoreet tortor pellentesque vitae. Nunc aliquam tellus vitae blandit congue. Donec viverra efficitur purus, ac tincidunt dui eleifend in. Sed et tristique sem. In eleifend dolor urna, molestie dictum libero condimentum a. Maecenas pulvinar a metus a luctus. Nunc vulputate urna sed vehicula sollicitudin."
+    },
+    {
+        "id": 4,
+        "userId": 1,
+        "movie": "Pengabdi Setan",
+        "rating": 4.8,
+        "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur urna lectus, vitae laoreet tortor pellentesque vitae. Nunc aliquam tellus vitae blandit congue. Donec viverra efficitur purus, ac tincidunt dui eleifend in. Sed et tristique sem. In eleifend dolor urna, molestie dictum libero condimentum a. Maecenas pulvinar a metus a luctus. Nunc vulputate urna sed vehicula sollicitudin."
+    },
+    {
+        "id": 5,
+        "userId": 2,
+        "movie": "Memento",
+        "rating": 4.8,
+        "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur urna lectus, vitae laoreet tortor pellentesque vitae. Nunc aliquam tellus vitae blandit congue. Donec viverra efficitur purus, ac tincidunt dui eleifend in. Sed et tristique sem. In eleifend dolor urna, molestie dictum libero condimentum a. Maecenas pulvinar a metus a luctus. Nunc vulputate urna sed vehicula sollicitudin."
+    },
+    {
+        "id": 6,
+        "userId": 3,
+        "movie": "The Avengers",
+        "rating": 4.8,
+        "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur urna lectus, vitae laoreet tortor pellentesque vitae. Nunc aliquam tellus vitae blandit congue. Donec viverra efficitur purus, ac tincidunt dui eleifend in. Sed et tristique sem. In eleifend dolor urna, molestie dictum libero condimentum a. Maecenas pulvinar a metus a luctus. Nunc vulputate urna sed vehicula sollicitudin."
+    },
+    {
+        "userId": 1,
+        "movie": "Moon Knight",
+        "rating": 4.8,
+        "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur urna lectus, vitae laoreet tortor pellentesque vitae. Nunc aliquam tellus vitae blandit congue. Donec viverra efficitur purus, ac tincidunt dui eleifend in. Sed et tristique sem. In eleifend dolor urna, molestie dictum libero condimentum a. Maecenas pulvinar a metus a luctus. Nunc vulputate urna sed vehicula sollicitudin.",
+        "id": 8
+    },
+    {
+        "userId": 1,
+        "movie": "Moon Knight",
+        "rating": 5,
+        "review": "GG keren film nya asli ",
+        "id": 9
+    },
+    {
+        "movie": "Hawkeye",
+        "rating": 4,
+        "review": "GG keren film nya asli ",
+        "id": 10,
+        "userId": 1
+    }
+]
