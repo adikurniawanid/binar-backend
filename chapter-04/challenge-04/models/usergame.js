@@ -6,6 +6,9 @@ module.exports = (sequelize, DataTypes) => {
       UserGame.hasOne(models.UserGameBiodata, {
         foreignKey: "userId",
       });
+      UserGame.hasMany(models.UserGameHistory, {
+        foreignKey: "userId",
+      });
     }
   }
   UserGame.init(

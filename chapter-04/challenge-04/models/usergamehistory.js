@@ -3,7 +3,9 @@ const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class UserGameHistory extends Model {
     static associate(models) {
-      // define association here
+      UserGameHistory.belongsTo(models.UserGame, {
+        foreignKey: "userId",
+      });
     }
   }
   UserGameHistory.init(
