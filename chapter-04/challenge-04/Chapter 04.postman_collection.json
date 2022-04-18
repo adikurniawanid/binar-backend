@@ -1,0 +1,1181 @@
+{
+	"info": {
+		"_postman_id": "d349e139-c1d5-47b5-b022-14557efd433d",
+		"name": "Chapter 04",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin\" \n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-NwFmQsqol68nfDASlaCmPN168oE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 08:24:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin\""
+				},
+				{
+					"name": "401 Unauthorized",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin\" \n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-skIAxDAbP+E0wHjAEalh+HBFMwM\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 08:24:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Invalid username or password\"\n}"
+				}
+			]
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:3000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1694"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69e-5d4B70KAM6Y+2pBKwcEsYfRrCZI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 08:15:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"publicId\": \"9e50ab39-8f99-4333-b2b4-8b6344bd23b6\",\n        \"username\": \"admin\"\n    },\n    {\n        \"publicId\": \"0624dd13-627e-4adc-b7a0-9aeb83ecfe26\",\n        \"username\": \"LeslieMoen_OConn\"\n    },\n    {\n        \"publicId\": \"62c8ee91-b826-4e40-9251-40fa7e2fa7ba\",\n        \"username\": \"AgnesKessler23\"\n    },\n    {\n        \"publicId\": \"2d0ca2a9-e58d-4ae4-86d6-c5703f8a6b68\",\n        \"username\": \"TraceyFadel66\"\n    },\n    {\n        \"publicId\": \"a874c301-3a69-4ce4-92ca-2a2067ea1f93\",\n        \"username\": \"ErikAbshire_Hami\"\n    },\n    {\n        \"publicId\": \"e6f6a4b3-8ba3-41b2-a48a-0f58571f0996\",\n        \"username\": \"ClarenceSauerV60\"\n    },\n    {\n        \"publicId\": \"f2c494ef-5ba8-44f2-b0c4-86db3de23aad\",\n        \"username\": \"ConradNikolaus_S\"\n    },\n    {\n        \"publicId\": \"88799eeb-c36c-45b8-85e6-a34e4b837bfa\",\n        \"username\": \"WayneMayer6\"\n    },\n    {\n        \"publicId\": \"28d74f6a-8428-4a57-bb2a-e68eb4a297d9\",\n        \"username\": \"MathewSanfordMD5\"\n    },\n    {\n        \"publicId\": \"a534a589-f40e-4623-ab8e-4b0abaa10420\",\n        \"username\": \"MissHughBahringe\"\n    },\n    {\n        \"publicId\": \"da54f6a4-fe5e-418f-848a-5fcc6223edbb\",\n        \"username\": \"BerthaHane83\"\n    },\n    {\n        \"publicId\": \"325bc52f-b94a-40df-a732-f0b0fa889b06\",\n        \"username\": \"AndreaGoyette90\"\n    },\n    {\n        \"publicId\": \"5a1e54dc-8eea-4a10-8aa4-862a97eb528e\",\n        \"username\": \"SandyGlover77\"\n    },\n    {\n        \"publicId\": \"befbbff6-4284-49a3-976d-00324cf34793\",\n        \"username\": \"VictorPouros_Hau\"\n    },\n    {\n        \"publicId\": \"bb4bdbf9-587e-4085-aa50-a25dc96977a7\",\n        \"username\": \"MicheleBartell.M\"\n    },\n    {\n        \"publicId\": \"853b01bc-ad9f-4c8b-afa7-fce137c45664\",\n        \"username\": \"LorenaBashirian5\"\n    },\n    {\n        \"publicId\": \"a930818f-9a17-40b1-80b4-9db612ef8d58\",\n        \"username\": \"GuillermoGrimes.\"\n    },\n    {\n        \"publicId\": \"47a95184-4e7d-4a96-b65c-8cb20c026b9b\",\n        \"username\": \"LeighKilback.Abs\"\n    },\n    {\n        \"publicId\": \"f0623fb8-b303-4cde-ad93-068e1a3834c4\",\n        \"username\": \"DianneDeckow.Spo\"\n    },\n    {\n        \"publicId\": \"60324f98-c9f4-4656-9fe6-dc8e1f215cc0\",\n        \"username\": \"AlexBrown_Kshler\"\n    },\n    {\n        \"publicId\": \"ef30842a-d9bc-4f18-b1e0-c1713a84e138\",\n        \"username\": \"GeoffreyCremin.C\"\n    }\n]"
+				},
+				{
+					"name": "401 Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admina",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-2UU+qyi4FMjrYqmZayQtc0M7LV4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 10:55:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unauthorized User\"\n}"
+				}
+			]
+		},
+		{
+			"name": "users/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:3000/users/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "124"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7c-B/xMzUKegFjCF+fjc7RfP0rMbvk\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 08:16:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"publicId\": \"9e50ab39-8f99-4333-b2b4-8b6344bd23b6\",\n    \"username\": \"admin\",\n    \"UserGameBiodatum\": {\n        \"name\": \"Delbert Hansen\",\n        \"age\": 27\n    }\n}"
+				},
+				{
+					"name": "401 Unauthorized User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admina",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9e50ab39-8f92-4333-b2b4-8b6344bd23b6"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-2UU+qyi4FMjrYqmZayQtc0M7LV4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 10:55:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unauthorized User\"\n}"
+				},
+				{
+					"name": "404 User not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9e50ab39-8f92-4333-b2b4-8b6344bd23b6"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-ZEVVcvtFhxKX/QUvVKqKxwGbbNA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 08:37:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"adigege\",\n    \"password\" : \"adigege\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"adigege\",\n    \"password\" : \"adigege\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-VkRQPntWqbDg/JDiHlLp7RaYIr0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 11:18:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success add user\"\n}"
+				},
+				{
+					"name": "401 Unauthorized",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admina",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"adigege\",\n    \"password\" : \"adigege\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-2UU+qyi4FMjrYqmZayQtc0M7LV4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 11:18:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unauthorized User\"\n}"
+				}
+			]
+		},
+		{
+			"name": "users/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:3000/users/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-2xy46spgoyBwSWSRRwuSigCMyDk\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 10:46:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success delete user\"\n}"
+				},
+				{
+					"name": "404 User not Found",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-ZEVVcvtFhxKX/QUvVKqKxwGbbNA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 10:45:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User not found\"\n}"
+				},
+				{
+					"name": "401 Unauthorized User",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admina",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-2UU+qyi4FMjrYqmZayQtc0M7LV4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 10:56:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unauthorized User\"\n}"
+				}
+			]
+		},
+		{
+			"name": "users/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"LutherPacocha_Ki\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/users/:id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62a5ea4c-e871-4b04-88d2-67eda7a91a86"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\" : \"LutherPacocha_Ki\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "62a5ea4c-e871-4b04-88d2-67eda7a91a86"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-/EowtXyB+h6YZUJH2xaU9nICCIY\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 11:23:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Success update password user\"\n}"
+				},
+				{
+					"name": "404 User not found",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9e50ab39-8f99-4333-b2b4-8b6344bd23b6:admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\" : \"LutherPacocha_Ki\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/:id",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "62a5ea4c-e871-4b04-88d2-67eda7a91a85"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-ZEVVcvtFhxKX/QUvVKqKxwGbbNA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 11:24:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User not found\"\n}"
+				}
+			]
+		}
+	]
+}
