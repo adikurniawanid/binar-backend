@@ -19,7 +19,7 @@
     },
     {
       "name": "User",
-      "description": "Everyting about User Game"
+      "description": "Everyting about User Game || Need authorizations*"
     }
   ],
   "paths": {
@@ -414,6 +414,114 @@
       "type": "apiKey",
       "name": "Authorization",
       "in": "header"
+    }
+  },
+  "definitions": {
+    "UserGames": {
+      "required": [
+        "id",
+        "publicId",
+        "username",
+        "password",
+        "createdAt",
+        "updatedAt"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "publicId": {
+          "type": "uuid"
+        },
+        "username": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "date"
+        },
+        "updatedAt": {
+          "type": "date"
+        },
+        "deletedAt": {
+          "type": "date"
+        }
+      },
+      "xml": {
+        "name": "Tag"
+      }
+    },
+    "UserGameBiodatas": {
+      "required": [
+        "userId",
+        "name",
+        "username",
+        "password",
+        "createdAt",
+        "updatedAt"
+      ],
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        },
+        "createdAt": {
+          "type": "date"
+        },
+        "updatedAt": {
+          "type": "date"
+        }
+      },
+      "xml": {
+        "name": "Tag"
+      }
+    },
+    "UserGameHistories": {
+      "required": [
+        "id",
+        "userId",
+        "startTime",
+        "endTime",
+        "score",
+        "createdAt",
+        "updatedAt"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "userId": {
+          "type": "integer"
+        },
+        "startTime": {
+          "type": "date"
+        },
+        "endTime": {
+          "type": "date"
+        },
+        "score": {
+          "type": "biginteger"
+        },
+        "createdAt": {
+          "type": "date"
+        },
+        "updatedAt": {
+          "type": "date"
+        }
+      },
+      "xml": {
+        "name": "Tag"
+      }
     }
   }
 }
