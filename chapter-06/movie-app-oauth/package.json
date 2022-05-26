@@ -1,0 +1,26 @@
+{
+  "name": "movie-app-oauth",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./src/bin/www"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "@sentry/node": "^6.19.7",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "express-validator": "^6.14.0",
+    "google-auth-library": "^8.0.2",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "npm": "^8.10.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.2"
+  }
+}
