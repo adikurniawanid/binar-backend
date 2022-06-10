@@ -1,0 +1,37 @@
+{
+  "name": "challenge-04",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./src/bin/www",
+    "test": "jest --detectOpenHandles"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.0",
+    "express": "~4.16.1",
+    "express-validator": "^6.14.0",
+    "google-auth-library": "^8.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.16",
+    "otp-generator": "^4.0.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.18.0",
+    "swagger-ui-express": "^4.3.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.1.2",
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
